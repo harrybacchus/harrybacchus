@@ -1,0 +1,69 @@
+body{
+    margin:0;
+    padding:0;
+    background:#f2eee3;
+}
+h2 {
+    color:black;text-align:center;
+}
+a {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    text-transform:uppercase;
+    text-decoration:none;
+    text-align:center;
+    color:red;
+    font-size:30px;
+    font-family:verdana;
+    letter-spacing:4px;
+    padding-left:5px;
+}
+a::before,
+a::after,
+span::before,
+span::after {
+    content:"";
+    position:absolute;
+    width:8px;
+    height:8px;
+    background:transparent;
+    transition:1s;
+}
+
+/* TOP LEFT */
+a::before {
+    top:-2px;
+    left:-2px;
+    border-top: 2px solid red;
+    border-left: 2px solid red;
+}
+/* TOP RIGHT */
+a::after {
+    top:-2px;
+    right:-2px;
+    border-top: 2px solid red;
+    border-right: 2px solid red;
+}
+/* BOTTOM LEFT */
+span::before{
+    bottom:-2px;
+    left:-2px;
+    border-bottom: 2px solid red;
+    border-left: 2px solid red;
+}
+/* BOTTOM RIGHT  */
+span::after {
+    bottom:-2px;
+    right:-2px;
+    border-bottom: 2px solid red;
+    border-right: 2px solid red;
+}
+a:hover::before,
+a:hover::after,
+a:hover span::before,
+a:hover span::after {
+    width: calc( 180px / 2);
+    : calc( 50px / 2);
+}
