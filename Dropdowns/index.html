@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dropdown</title>
+        <link rel="stylesheet" href="custom.css">
+    </head>
+    <body>
+        <div class="dropdown">
+            <button onclick="toggleDropdown()">
+                <span> account_circle </span>
+                Reg Jackson
+                <span class="chevron"> expand_more </span>
+            </button>
+            <div class="nenu">
+                <div id="menu-inner* class="menu-inner">
+
+                    <div class="nain-menu">
+                        <button onclick="toggleSubMenu('my-tools')">
+                            <span> build </span>
+                            My Tools
+                            <span class="chevron">
+                            chevron_right
+                            </span>
+                        </button>
+                        <!-- menu buttons -->
+                    </div>
+                    <div id="my-tools" class="sub-menu">
+                        <button onclick="toggleSubMenu()">
+                        <span> arrow_back </span>
+                        Back
+                        </button>
+                        <!-- sub menu buttons -->
+                    </div>
+                    <!-- other sub menus -->
+                </div>
+            </div>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>
