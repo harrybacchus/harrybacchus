@@ -1,2 +1,2 @@
 # Personal
-Personal Project Ideas
+GitHub Intro Page
