@@ -1,0 +1,26 @@
+{
+  "name": "harrybacchus",
+  "version": "1.0.0",
+  "description": "IT professional with 12 years of experience, now on a journey into web development and software engineering.",
+  "main": "index.js",
+  "scripts": {
+    "build": "node node_modules/@tailwindcss/cli/dist/index.mjs -i ./src/input.css -o ./dist/output.css",
+    "watch": "node node_modules/@tailwindcss/cli/dist/index.mjs -i ./src/input.css -o ./dist/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harrybacchus/harrybacchus.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/harrybacchus/harrybacchus/issues"
+  },
+  "homepage": "https://github.com/harrybacchus/harrybacchus#readme",
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.2.3",
+    "tailwindcss": "^4.2.3"
+  }
+}
